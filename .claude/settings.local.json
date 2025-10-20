@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(go mod init github.com/infamousjoeg/qrterm)",
+      "Bash(go get github.com/skip2/go-qrcode)",
+      "Bash(go mod tidy)",
+      "Bash(go run main.go https://github.com/infamousjoeg/qrterm)",
+      "Bash(go run main.go)",
+      "Bash(go build -o qrterm)",
+      "Bash(./qrterm https://claude.ai)",
+      "Bash(go test -v)",
+      "Bash(git init)",
+      "Bash(git add .)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nInitial commit: qrterm CLI tool\n\nA simple CLI tool that generates QR codes from URLs and displays them\ndirectly in the terminal using Unicode block characters.\n\nFeatures:\n- QR code generation from URLs or text\n- Terminal display with Unicode blocks\n- Configurable size parameter\n- Basic test coverage\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
